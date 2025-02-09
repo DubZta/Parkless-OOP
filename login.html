@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Parkless Login</title>
+  <link rel="stylesheet" href="./stylelogin.css">
+</head>
+<body>
+<div class="wrapper">
+  <div class="title-text">
+    <div class="title login">Login Form</div>
+    <div class="title signup">Sign Up Form</div>
+  </div>
+  <div class="form-container">
+    <div class="slide-controls">
+      <input type="radio" name="slide" id="login" checked>
+      <input type="radio" name="slide" id="signup">
+      <label for="login" class="slide login">Login</label>
+      <label for="signup" class="slide signup">Sign Up</label>
+      <div class="slider-tab"></div>
+    </div>
+    <div class="form-inner">
+      <!-- Login Form -->
+      <form action="connect.php" method="post" class="login">
+        <div class="field">
+          <input type="email" name="email" placeholder="Email Address" required id="email">
+        </div>
+        <div class="field">
+          <input type="password" name="pass" placeholder="Password" required id="pass">
+        </div>
+        <div class="pass-link"><a href="#">Forgot password?</a></div>
+        <div class="field btn">
+          <div class="btn-layer"></div>
+          <input type="submit" value="Login">
+        </div>
+        <div class="signup-link">Not a Parkless member? <a href="#">Sign Up!</a></div>
+      </form>
+
+      <!-- Signup Form -->
+      <form action="connect.php" method="post" class="signup">
+        <div class="field">
+          <input type="email" name="email" placeholder="Email Address" required id="email">
+        </div>
+        <div class="field">
+          <input type="text" name="username" placeholder="Username" required id="username">
+        </div>
+        <div class="field">
+          <input type="password" name="pass" placeholder="Password" required id="pass">
+        </div>
+        <div class="field">
+          <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+        </div>
+        <div class="field btn">
+          <div class="btn-layer"></div>
+          <input type="submit" value="Sign Up">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<script src="./scriptlogin.js"></script>
+</body>
+</html>
